@@ -700,10 +700,10 @@
     "imdb_url": "https://www.imdb.com/title/tt7653254/"
   },
   {
-    "movie": "action",
-    "rating": 9,
+    "movie": "pushpa",
+    "rating": 10,
     "image": "images/lotr_return_king.jpg",
     "imdb_url": "https://www.imdb.com/title/tt0167260/",
-    "id": "e1ad8aa4-ca99-4cf0-aa52-1e4a2c170029"
+    "id": 101
   }
 ]

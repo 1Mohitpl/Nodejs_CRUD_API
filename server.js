@@ -1,7 +1,7 @@
 const { log } = require("console");
 const http = require("http");
 let movies = require("./data/movies_data.json");
-const {get_request, post_request, put_req, delete_req} = require("./methodes/Routes");
+const { get_request, post_request, delete_req, put_req } = require("./methodes/Routes");
 const PORT = process.env.PORT || 4000;
 
 // Create HTTP server
@@ -30,3 +30,4 @@ const server = http.createServer((req, res) => {
 server.listen(PORT, () => {
     log(`Server is running on port: ${PORT}`);
 });
+

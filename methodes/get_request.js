@@ -29,5 +29,4 @@ const get_request = (req, res) => {
     }
 };
 
-
-module.exports = {get_request};
+module.exports = { get_request };
