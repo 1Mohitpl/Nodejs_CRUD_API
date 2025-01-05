@@ -1,5 +1,6 @@
 const crypto = require("crypto");
 const body_req = require("../util/body-parse");
+const writeTofile = require("../util/write_to_file");
 const { log } = require("console");
 
 const post_request = async (req, res) => {
@@ -9,6 +10,7 @@ const post_request = async (req, res) => {
            // now i create random id 
            body.id = crypto.randomUUID();
            req.movies.push(body);
+           writeTofile(req.movies);
            res.writeHead(201, {"content-type" : "application/json"});
            res.end();
     } catch(err){
